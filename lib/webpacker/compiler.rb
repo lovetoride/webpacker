@@ -69,7 +69,7 @@ class Webpacker::Compiler
 
       stdout, stderr, status = Open3.capture3(
         webpack_env,
-        "#{RbConfig.ruby} ./bin/webpack",
+        "#{RbConfig.ruby} npx webpack",
         chdir: File.expand_path(config.root_path)
       )
 
